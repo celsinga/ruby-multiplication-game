@@ -22,6 +22,7 @@ class Game
       puts "You have #{@current_player.lives}/3 lives"
       switch_turn
     end
+    start
   end
   def switch_turn
     @current_player = @player_one == @current_player ? @player_two : @player_one
