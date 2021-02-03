@@ -4,7 +4,7 @@ class Questions
     @number_two = rand(1..10)
     puts "What does #{@number_one} times #{@number_two} equal?"
     answer = gets.chomp
-    if (@number_one + @number_two == answer.to_i)
+    if (@number_one * @number_two == answer.to_i)
       puts "YES! Correct."
       return true
     else
